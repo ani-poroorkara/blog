@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="css/index.css">
     </head>
 
-    <body>
+    <body class="theme-light">
         <!-- Navbar-->
         <nav class="navbar navbar-expand-md sticky-top">
             <div class="container">
@@ -60,108 +60,110 @@
 
         <!-- Page content-->
         <section id="page-content">
+            <div class="container">
+                <div class="row">
 
-        </section>
-        <div class="container">
-            <div class="row">
-                <!-- Blog entries-->
-                <div class="col-lg-8">
-                    <!-- Featured blog post-->
-                    <div class="card mb-4">
-                        <a href="#!"><img class="card-img-top" src="https://dummyimage.com/850x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                        <div class="card-body">
-                            <div class="small text-muted">January 1, 2021</div>
-                            <h2 class="card-title">Featured Post Title</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-                            <a class="btn btn-primary" href="#!">Read more →</a>
-                        </div>
-                    </div>
-                    <!-- Nested row for non-featured blog posts-->
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <!-- Blog post-->
-                            <div class="card mb-4">
-                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                                <div class="card-body">
-                                    <div class="small text-muted">January 1, 2021</div>
-                                    <h2 class="card-title h4">Post Title</h2>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
-                                    <a class="btn btn-primary" href="#!">Read more →</a>
-                                </div>
-                            </div>
-                            <!-- Blog post-->
-                            <div class="card mb-4">
-                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                                <div class="card-body">
-                                    <div class="small text-muted">January 1, 2021</div>
-                                    <h2 class="card-title h4">Post Title</h2>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
-                                    <a class="btn btn-primary" href="#!">Read more →</a>
-                                </div>
+                    <!-- Blog entries-->
+                    <div class="col-lg-8">
+
+                        <!-- Featured blog post-->
+                        <div class="post card mb-4">
+                            <a href="#!"><img class="card-img-top" src="https://dummyimage.com/850x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                            <div class="card-body">
+                                <div class="small text-muted">January 1, 2021</div>
+                                <h2 class="card-title">Featured Post Title <span class="badge">New</span></h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                                <a class="btn" href="#!">Read more →</a>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <!-- Blog post-->
-                            <div class="card mb-4">
-                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                                <div class="card-body">
-                                    <div class="small text-muted">January 1, 2021</div>
-                                    <h2 class="card-title h4">Post Title</h2>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
-                                    <a class="btn btn-primary" href="#!">Read more →</a>
-                                </div>
-                            </div>
-                            <!-- Blog post-->
-                            <div class="card mb-4">
-                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                                <div class="card-body">
-                                    <div class="small text-muted">January 1, 2021</div>
-                                    <h2 class="card-title h4">Post Title</h2>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.</p>
-                                    <a class="btn btn-primary" href="#!">Read more →</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <!-- Side widgets-->
-                <div class="col-lg-4">
-                    
-                    <!-- Categories widget-->
-                    <div class="card mb-4">
-                        <div class="card-header">Categories</div>
-                        <div class="card-body">
-                            <div class="list-group">
-                                <a href="#" class="list-group-item list-group-item-action">
-                                  <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Travel</h5>
-                                    <small><span class="badge bg-primary">Primary</span></small>
-                                  </div>
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <div class="d-flex w-100 justify-content-between">
-                                      <h5 class="mb-1">Tech</h5>
-                                      <small><span class="badge bg-primary">Primary</span></small>
+
+                        <!-- New blog posts-->
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <!-- Blog post-->
+                                <div class="post card mb-4">
+                                    <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                                    <div class="card-body">
+                                        <div class="small text-muted">January 1, 2021</div>
+                                        <h2 class="card-title h4">Post Title</h2>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                                        <a class="btn btn-primary" href="#!">Read more →</a>
                                     </div>
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <div class="d-flex w-100 justify-content-between">
-                                      <h5 class="mb-1">FFiction</h5>
-                                      <small><span class="badge bg-primary">Primary</span></small>
+                                </div>
+                                <!-- Blog post-->
+                                <div class="post card mb-4">
+                                    <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                                    <div class="card-body">
+                                        <div class="small text-muted">January 1, 2021</div>
+                                        <h2 class="card-title h4">Post Title</h2>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                                        <a class="btn btn-primary" href="#!">Read more →</a>
                                     </div>
-                                </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <!-- Blog post-->
+                                <div class="post card mb-4">
+                                    <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                                    <div class="card-body">
+                                        <div class="small text-muted">January 1, 2021</div>
+                                        <h2 class="card-title h4">Post Title</h2>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                                        <a class="btn btn-primary" href="#!">Read more →</a>
+                                    </div>
+                                </div>
+                                <!-- Blog post-->
+                                <div class="post card mb-4">
+                                    <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                                    <div class="card-body">
+                                        <div class="small text-muted">January 1, 2021</div>
+                                        <h2 class="card-title h4">Post Title</h2>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.</p>
+                                        <a class="btn btn-primary" href="#!">Read more →</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        
                     </div>
-                    <!-- Side widget-->
-                    <div class="card">
-                        <div class="card-header">Side Widget</div>
-                        <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
+                    <!-- Side Bars-->
+                    <div class="col-lg-4">
+                        
+                        <!-- Categories widget-->
+                        <div class="cate card mb-4">
+                            <div class="card-header">Categories</div>
+                            <div class="card-body">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Travel</h5>
+                                        <small><span class="badge bg-primary">10</span></small>
+                                    </div>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Tech</h5>
+                                        <small><span class="badge bg-primary">1</span></small>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">FFiction</h5>
+                                        <small><span class="badge bg-primary">2</span></small>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Extra Sides -->
+                        <div class="widget card">
+                            <div class="card-header">Side Widget</div>
+                            <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Footer-->
         <footer class="">
             <div class="container"><p class="text-center">Copyright &copy; blog@ani-poroorkara 2021</p></div>

@@ -1,5 +1,9 @@
+@import base
+
 html,body
     overflow-x: hidden
+    background-color: var(--bg-m)
+    background-image: url('../img/blog-bg2.svg')
 
 header
     background-image: url('../img/blog-bg.svg')
@@ -11,5 +15,49 @@ nav.navbar.sticky-top
     width: 100%
     top: 0
 
+//Nav 
+nav 
+    a.nav-link
+        color: var(--text-nav)
+        border-radius: 20px
+
+        &:active, &:focus, &:hover
+            background-color: var(--text-navhl)
+            color: var(--text-nav)
+            transition: 0.5s linear
+    a.navbar-brand
+        color: var(--text-nav)
+
+
 #page-content
     padding: 2% 0%
+    .post
+        background-color: var(--bg-post)
+        .card-body
+            .badge 
+                background-color: var(--bg-m)
+                color: var(--bg-post)
+            p,h2
+                color: var(--text-post)
+            .text-muted 
+                color: var(--sub-post) !important
+            .btn
+                background-color: var(--bg-m)
+                color: var(--bg-post) 
+                &:active, &:focus, &:hover
+                    background-color: var(--sub-post)
+                    transition: 0.5s linear
+            
+    .cate
+        background-color: var(--bg-cate)
+        color: var(--text-post)
+
+        .list-group-item 
+            border: 1px solid rgba(0,0,0,.125)
+            background-color: transparent
+            color: var(--text-post)
+
+    .widget
+        background-color: var(--bg-side)
+        color: var(--text-post)
+

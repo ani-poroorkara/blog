@@ -1,5 +1,18 @@
+.theme-light {
+  --text-nav: #4C3B4D;
+  --text-navhl: #93FF96;
+  --bg-m: #F2F5DE;
+  --bg-post: #1D3557;
+  --text-post:#FAEEEE;
+  --sub-post: #B7C9EA;
+  --bg-cate: #DB2B39;
+  --bg-side: #1F0318;
+}
+
 html, body {
   overflow-x: hidden;
+  background-color: var(--bg-m);
+  background-image: url("../img/blog-bg2.svg");
 }
 
 header {
@@ -14,8 +27,55 @@ nav.navbar.sticky-top {
   top: 0;
 }
 
+nav a.nav-link {
+  color: var(--text-nav);
+  border-radius: 20px;
+}
+nav a.nav-link:active, nav a.nav-link:focus, nav a.nav-link:hover {
+  background-color: var(--text-navhl);
+  color: var(--text-nav);
+  transition: 0.5s linear;
+}
+nav a.navbar-brand {
+  color: var(--text-nav);
+}
+
 #page-content {
   padding: 2% 0%;
+}
+#page-content .post {
+  background-color: var(--bg-post);
+}
+#page-content .post .card-body .badge {
+  background-color: var(--bg-m);
+  color: var(--bg-post);
+}
+#page-content .post .card-body p, #page-content .post .card-body h2 {
+  color: var(--text-post);
+}
+#page-content .post .card-body .text-muted {
+  color: var(--sub-post) !important;
+}
+#page-content .post .card-body .btn {
+  background-color: var(--bg-m);
+  color: var(--bg-post);
+}
+#page-content .post .card-body .btn:active, #page-content .post .card-body .btn:focus, #page-content .post .card-body .btn:hover {
+  background-color: var(--sub-post);
+  transition: 0.5s linear;
+}
+#page-content .cate {
+  background-color: var(--bg-cate);
+  color: var(--text-post);
+}
+#page-content .cate .list-group-item {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: transparent;
+  color: var(--text-post);
+}
+#page-content .widget {
+  background-color: var(--bg-side);
+  color: var(--text-post);
 }
 
 /*# sourceMappingURL=index.css.map */
