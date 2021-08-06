@@ -15,12 +15,6 @@ html, body {
   background-image: url("../img/blog-bg2.svg");
 }
 
-header {
-  background-image: url("../img/blog-bg.svg");
-  min-height: 30vh;
-  padding: 15% 10%;
-}
-
 nav.navbar.sticky-top {
   position: fixed;
   width: 100%;
@@ -38,6 +32,23 @@ nav a.nav-link:active, nav a.nav-link:focus, nav a.nav-link:hover {
 }
 nav a.navbar-brand {
   color: var(--text-nav);
+}
+
+header.heading {
+  background-image: url("../img/blog-bg.svg");
+  min-height: 30vh;
+  padding: 12% 10%;
+}
+header.heading a {
+  background-color: var(--text-navhl);
+  color: var(--text-nav);
+  border-radius: 5px;
+  text-decoration: none;
+}
+header.heading a:active, header.heading a:focus, header.heading a:hover {
+  background-color: var(--text-nav);
+  color: var(--text-navhl);
+  transition: 0.2s linear;
 }
 
 #page-content {

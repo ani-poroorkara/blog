@@ -4,18 +4,13 @@ html,body
     overflow-x: hidden
     background-color: var(--bg-m)
     background-image: url('../img/blog-bg2.svg')
-
-header
-    background-image: url('../img/blog-bg.svg')
-    min-height: 30vh
-    padding: 15% 10%
-
+    
+//Nav 
 nav.navbar.sticky-top
     position: fixed
     width: 100%
     top: 0
 
-//Nav 
 nav 
     a.nav-link
         color: var(--text-nav)
@@ -28,6 +23,22 @@ nav
     a.navbar-brand
         color: var(--text-nav)
 
+// Header
+header.heading
+    background-image: url('../img/blog-bg.svg')
+    min-height: 30vh
+    padding: 12% 10%
+
+    a
+        background-color: var(--text-navhl)
+        color: var(--text-nav)
+        border-radius: 5px
+        text-decoration: none
+
+        &:active, &:focus, &:hover
+            background-color: var(--text-nav)
+            color: var(--text-navhl)
+            transition: 0.2s linear
 
 #page-content
     padding: 2% 0%
