@@ -3,7 +3,7 @@
 html,body
     overflow-x: hidden
     background-color: var(--bg-m)
-    background-image: url('../img/blog-bg2.svg')
+    
     
 //Nav 
 nav.navbar.sticky-top
@@ -13,21 +13,34 @@ nav.navbar.sticky-top
 
 nav 
     a.nav-link
-        color: var(--text-nav)
+        background-color: #2E282A
+        color: white
         border-radius: 20px
-
-        &:active, &:focus, &:hover
-            background-color: var(--text-navhl)
-            color: var(--text-nav)
-            transition: 0.5s linear
+    
+        &:active, &:hover
+            background-color: #57E2E5
+            color: #2E282A
+            transition: 0.5s
+        &:focus
+            color: white
     a.navbar-brand
-        color: var(--text-nav)
+        color: #2E282A
+
+    ul.dropdown-menu.show
+        background-color: #57E2E5
 
 // Header
 header.heading
-    background-image: url('../img/blog-bg.svg')
+    background-image: url('../img/bg.svg')
+    background-repeat: no-repeat
+    background-position: center
     min-height: 30vh
     padding: 12% 10%
+
+    h1,h4
+        backdrop-filter: blur(1px)
+        color: #2E282A
+        border-radius: 25px
 
     a
         background-color: var(--text-navhl)
@@ -41,6 +54,7 @@ header.heading
             transition: 0.2s linear
 
 #page-content
+    background-image: url('../img/bg-cover.svg')
     padding: 2% 0%
     .post
         background-color: var(--bg-post)

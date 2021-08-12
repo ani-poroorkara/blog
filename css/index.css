@@ -12,7 +12,6 @@
 html, body {
   overflow-x: hidden;
   background-color: var(--bg-m);
-  background-image: url("../img/blog-bg2.svg");
 }
 
 nav.navbar.sticky-top {
@@ -22,22 +21,36 @@ nav.navbar.sticky-top {
 }
 
 nav a.nav-link {
-  color: var(--text-nav);
+  background-color: #2E282A;
+  color: white;
   border-radius: 20px;
 }
-nav a.nav-link:active, nav a.nav-link:focus, nav a.nav-link:hover {
-  background-color: var(--text-navhl);
-  color: var(--text-nav);
-  transition: 0.5s linear;
+nav a.nav-link:active, nav a.nav-link:hover {
+  background-color: #57E2E5;
+  color: #2E282A;
+  transition: 0.5s;
+}
+nav a.nav-link:focus {
+  color: white;
 }
 nav a.navbar-brand {
-  color: var(--text-nav);
+  color: #2E282A;
+}
+nav ul.dropdown-menu.show {
+  background-color: #57E2E5;
 }
 
 header.heading {
-  background-image: url("../img/blog-bg.svg");
+  background-image: url("../img/bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   min-height: 30vh;
   padding: 12% 10%;
+}
+header.heading h1, header.heading h4 {
+  backdrop-filter: blur(1px);
+  color: #2E282A;
+  border-radius: 25px;
 }
 header.heading a {
   background-color: var(--text-navhl);
@@ -52,6 +65,7 @@ header.heading a:active, header.heading a:focus, header.heading a:hover {
 }
 
 #page-content {
+  background-image: url("../img/bg-cover.svg");
   padding: 2% 0%;
 }
 #page-content .post {
