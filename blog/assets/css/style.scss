@@ -3,5 +3,25 @@
 ---
 
 @import
-  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/skins/{{ site.minima.skin | default: 'dark' }}",
   "minima/initialize";
+
+// Post Layout
+.post-categories {
+  a{
+    background-color: #bbbbbb;
+    color: #181818;
+    border-radius: 5px;
+    padding: 5px;
+    border-color: #bbbbbb;
+  }:hover{
+    text-decoration: none;
+    background-color: #181818;
+    color: #bbbbbb;
+  }
+}
+.post-meta{
+  span.reading-time{
+    font-style: italic;  
+  }
+}
