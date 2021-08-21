@@ -5,19 +5,40 @@
 @import
   "minima/skins/{{ site.minima.skin | default: 'dark' }}",
   "minima/initialize";
+// import Font
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Spectral&display=swap');
 
+// body
+body{
+  font-family: 'Spectral', serif;
+  a{
+    color: #63CCCA
+  }
+}
+
+// h1
+h1{
+  font-family: 'Poiret One', cursive;
+}
+// h3
+.page-content{
+  a{
+    color: #63CCCA
+  }
+}
+.feed-subscribe{
+    color: #63CCCA
+}
 // Post Layout
 .post-categories {
   a{
-    background-color: #bbbbbb;
+    background-color: #63CCCA;
     color: #181818;
     border-radius: 5px;
-    padding: 5px;
-    border-color: #bbbbbb;
+    padding: 2px;
+    border-color: #63CCCA;
   }:hover{
-    text-decoration: none;
-    background-color: #181818;
-    color: #bbbbbb;
+    text-decoration: underline;
   }
 }
 .post-meta{
