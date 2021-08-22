@@ -51,10 +51,14 @@ minima:
 #header_pages:
 # - about.md
 
+#Pagnation
+paginate: 5
+
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default.
