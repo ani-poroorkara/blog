@@ -3,9 +3,10 @@ author:
   name: ani-poroorkara
   email: anirudh_p@outlook.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Everyone should have their own personal blog, so here's mine :).
+  logFile is my straightforward blog to publish content based on tech, 
+  experience, knowledge, fiction, life and possibly movie reviews. 
+brand-icon: assets/brand-icon.svg
 show_excerpts: false # set to true to show excerpts on the homepage
 
 # Minima date format
