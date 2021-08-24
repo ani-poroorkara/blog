@@ -4,15 +4,11 @@ title: About
 permalink: /about/
 ---
 <hr>
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## Hii Buddies! You've made it!
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I'm ecstatic to have you *here* and read my material. I'm Anirudh, full time student, software engineer(if employed or I just play video games) and an occasional author as a part of doing something of an hobby. 
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+If you want to connect with me regarding posts or in general, I would love to hear from you! You can find me on [LinkedIn](https://www.linkedin.com/in/anirudh-poroorkara-34900017b/) and [Instagram](https://www.instagram.com/aniporoorkara/). I also have a [professional website](https://ani-poroorkara.github.io/) (if you require that sort of thing?). If nothing works out, I guess you can send me a mail at <anirudh_p@outlook.com>. 
 
+>That's it. Enjoy your time here!
 
-[jekyll-organization]: https://github.com/jekyll
