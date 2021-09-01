@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 <hr>
-## Hii Buddies! You've made it!
+## Hii Guys! You've made it!
 
 I'm ecstatic to have you *here* in my world of tech-talk and hopefully some good fun filled fictional tales. I'm Anirudh, full time student, software engineer and a regular video gamer. When I am not doing any of the former, I prefer write stuff.
 
