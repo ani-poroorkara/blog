@@ -3,6 +3,7 @@ layout: post
 title: "Welcome to logFile!"
 categories: Life
 subtitle: Just a brief intro to my blog
+comments: true
 ---
 
 ## Hey Guys! You've made it! Again!! 
