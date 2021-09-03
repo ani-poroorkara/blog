@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-09-03T18:38:14+05:30</updated><id>/feed.xml</id><title type="html">logFile@Anirudh</title><subtitle>Everyone should have their own personal blog, so here&apos;s mine :). logFile is my straightforward blog to publish content based on tech,  experience, knowledge, fiction, life and possibly movie reviews. 
+</subtitle><author><name>ani-poroorkara</name><email>anirudh_p@outlook.com</email></author><entry><title type="html">Create your own FREE Blog!</title><link href="/howto/2021/09/02/creating-your-free-blog-using-jekyll-and-github-pages.html" rel="alternate" type="text/html" title="Create your own FREE Blog!" /><published>2021-09-02T00:00:00+05:30</published><updated>2021-09-02T00:00:00+05:30</updated><id>/howto/2021/09/02/creating-your-free-blog-using-jekyll-and-github-pages</id><content type="html" xml:base="/howto/2021/09/02/creating-your-free-blog-using-jekyll-and-github-pages.html">&lt;h3 id=&quot;hiii-guys-youve-made-it-to-my-first-howto-series-this-is-how-to-create-your-own-blog-in-a-simple-and-efficient-manner-which-also-happens-to-be-completely-free-coincidence-maybe&quot;&gt;Hiii Guys! You’ve made it to my first HowTo Series!! &lt;br /&gt;This is How to create your own blog in a simple and efficient manner which also happens to be completely FREE! Coincidence? Maybe!&lt;/h3&gt;
+
+&lt;p&gt;This entire blog is created using the same method so you know it’s efficient and capable. We will be using Jekyll to create our blog site and GitHub Pages to host them for free. So let’s not waste anymore time and get straight into it!&lt;/p&gt;
+
+&lt;h3 id=&quot;what-will-you-require&quot;&gt;What will you require?&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Just a general idea of HTML.&lt;/li&gt;
+  &lt;li&gt;A good code editor like VS Code.&lt;/li&gt;
+  &lt;li&gt;A brief idea on what markdown is and how to write them.&lt;/li&gt;
+  &lt;li&gt;Basic usage of GitHub.&lt;/li&gt;
+  &lt;li&gt;Sass and CSS if you want to style your page. It’s strictly optional so don’t sweat it!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you aren’t aware of some of the topics, worry not! I had no idea about Jekyll before I created this page. Just keep your will to learn high and go through the references I have provided to you throughout this post.&lt;/p&gt;
+
+&lt;h3 id=&quot;stairway-to-build-it&quot;&gt;Stairway to build it&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#step-1&quot;&gt;Jekyll&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#step-2&quot;&gt;Github Pages&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#step-3&quot;&gt;Generating your site&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#step-4&quot;&gt;Making the site truly yours&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#step-5&quot;&gt;Pushing your blog to GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;step-1&quot;&gt;1. Jekyll&lt;/h4&gt;
+&lt;p&gt;Let’s address the elephant on the site… Why Jekyll? Jekyll will help us publish all our posts in a very simple manner. It needs no HTML, no CSS and no complex databases. You will simple be writing in your notepad text file and having a complete writing experience! This was one of my major reasons of choosing Jekyll as I did not want to put in extra effort for this.&lt;/p&gt;
+
+&lt;p&gt;There are many different posts on how to install Jekyll for your OS so I’m not going to be repetitive and bore you. So go on and &lt;a href=&quot;&quot;&gt;install Jekyll&lt;/a&gt; and let’s meet back here to create your site!&lt;/p&gt;
+
+&lt;h4 id=&quot;step-2&quot;&gt;2. Github Pages&lt;/h4&gt;
+&lt;p&gt;Github Pages is basically free hostage for any of the projects you have on GitHub. If you don’t know what GitHub is, then you probably should get familiar with it cause it’s an integral part of publishing our posts. I’ll go over the publication of your posts too though I strongly recommend you look into it.&lt;/p&gt;
+
+&lt;p&gt;If you already have a GitHub account, there’s nothing else to do here or else go ahead and create an account now.&lt;/p&gt;
+
+&lt;p&gt;We are all set now! Let’s begin with our blog!&lt;/p&gt;
+
+&lt;h4 id=&quot;step-3&quot;&gt;3. Generating Your Site&lt;/h4&gt;
+&lt;p&gt;Firstly, create an empty folder and let’s name it whatever your website is going to be called. I am going to name it “blog”.&lt;/p&gt;
+
+&lt;p&gt;Let’s navigate to this folder using command prompt or VS Code or your favorite code editor and run the command&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;jekyll new .
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;and it should then show something similar to this&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;Running bundle install in Desktop/blog... 
+  Bundler: Fetching gem metadata from https://rubygems.org/..........
+  Bundler: Resolving dependencies...
+
+New jekyll site installed in Desktop/blog.
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Now let’s try running our site using&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;bundle exec jekyll serve
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;If you get some output like&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;Configuration file: Desktop/blog/_config.yml
+            Source: Desktop/blog
+       Destination: Desktop/blog/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+       Jekyll Feed: Generating feed for posts
+                    done in 0.744 seconds.
+ Auto-regeneration: enabled for &apos;Desktop/blog&apos;
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Yayy! We have successfully hosted our site locally!! Just open the url http://127.0.0.1:4000/ in your web browser and you’ll see the start page!&lt;/p&gt;
+
+&lt;p&gt;In some cases, you might encounter this error&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/jekyll-4.2.0/lib/jekyll/commands/serve/servlet.rb:3:in `require&apos;: cannot load such file -- webrick (LoadError)
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Worry not! I got you! This is because you haven’t installed webrick in your bundle. 
+Just enter this command and try serving your site again.&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;bundle add webrick
+bundle exec jekyll serve
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;If you are still facing any issues, I strongly encourage you to google and find yourself a remedy! Make no mistake, Googling is also an Art.&lt;/p&gt;
+
+&lt;h4 id=&quot;step-4&quot;&gt;4. Making the Site Truly &lt;em&gt;Yours&lt;/em&gt;&lt;/h4&gt;
+&lt;p&gt;Let’s personalize our site. Open the &lt;em&gt;_config.yml&lt;/em&gt; file in your root directory. Take a look at the file, you’ll find a lot of extra comments which we will choose to ignore for now but you should read them (It’s there for a reason).&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Your awesome title&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;your-email@example.com&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;&amp;gt;-&lt;/span&gt; 
+  &lt;span class=&quot;s&quot;&gt;Write an awesome description for your new site here. You can edit this&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;line in _config.yml. It will appear in your document head meta (for&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;Google search results) and in your feed.xml site description.&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;baseurl&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# the subpath of your site, e.g. /blog&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# the base hostname &amp;amp; protocol for your site, e.g. http://example.com&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;twitter_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyllrb&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;github_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Add and fill in all the relevant details to your site in this file. For example, my example blog’s _config.yml file looks like&lt;/p&gt;
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Example Blog&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;anirudh_p@outlook.com&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;&amp;gt;-&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# this means to ignore newlines until &quot;baseurl:&quot;&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;A very nice description!&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;baseurl&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# the subpath of your site, e.g. /blog&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# the base hostname &amp;amp; protocol for your site, e.g. http://example.com&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;twitter_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;idonthaveone&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;github_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;s&quot;&gt;ani-poroorkara&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;step-5&quot;&gt;5. Pushing your Blog to GitHub&lt;/h4&gt;
+&lt;p&gt;This is the part that requires you to have some or at the least basic knowledge about Git commands or GitHub. 
+The easiest way to quickly push a repository to git is&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Create a &lt;em&gt;public&lt;/em&gt; repository. The repository &lt;strong&gt;needs to be public&lt;/strong&gt; if you want to host your page for your audience.&lt;/li&gt;
+  &lt;li&gt;As soon as you create the repository, GitHub takes you to the quick setup page. Simply, copy paste the shown commands in your command prompt.
+This is an example of my quick setup commands.
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;git init
+git add README.md
+git commit -m &quot;first commit&quot;
+git branch -M master
+git remote add origin https://github.com/ani-poroorkara/examplejekyllblog.git
+git push -u origin master
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Done!&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>ani-poroorkara</name><email>anirudh_p@outlook.com</email></author><category term="HowTo" /><summary type="html">Hiii Guys! You’ve made it to my first HowTo Series!! This is How to create your own blog in a simple and efficient manner which also happens to be completely FREE! Coincidence? Maybe!</summary></entry><entry><title type="html">Welcome to logFile!</title><link href="/life/2021/08/29/welcome-to-logfile.html" rel="alternate" type="text/html" title="Welcome to logFile!" /><published>2021-08-29T00:00:00+05:30</published><updated>2021-08-29T00:00:00+05:30</updated><id>/life/2021/08/29/welcome-to-logfile</id><content type="html" xml:base="/life/2021/08/29/welcome-to-logfile.html">&lt;h2 id=&quot;hey-guys-youve-made-it-again&quot;&gt;Hey Guys! You’ve made it! Again!!&lt;/h2&gt;
+
+&lt;p&gt;As the name suggests, this is a log file of my recreational activities.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-beginning&quot;&gt;The beginning&lt;/h4&gt;
+
+&lt;p&gt;Initially, this was going to be a publication for my ongoing and completed projects. A space to record all my research and learning directly on a webpage for it to be later shared on my resume or wherever. Thinking it over, I decided, why limit myself when I can write about everything and anything?&lt;/p&gt;
+
+&lt;h4 id=&quot;three-weeks-later-heres-logfile-d&quot;&gt;Three weeks later.. Here’s logFile :D&lt;/h4&gt;
+
+&lt;p&gt;The goal of this post is simple - to inspire me to write regularly (probably once a week, maybe). So here’s to hoping for a continuous and consistent list of posts, publications, and fiction.&lt;/p&gt;
+
+&lt;h4 id=&quot;quick-view&quot;&gt;Quick View&lt;/h4&gt;
+
+&lt;p&gt;Let’s get you a quick run-through of all the sections on this page (what else would I write in this post? :/)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Category &lt;br /&gt;
+  My blog isn’t based on one particular niche. From technical to fantasy-fiction, I’ll be flitting between multiple genres. After a point, it’ll be difficult to keep track of all these posts, so why not categorize them for quick navigation? And guess what? I’ll also add a category button on each of the posts so it’s easier to hop on to that particular category.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Archive &lt;br /&gt;
+  All my posts are in chronological order. Don’t we just love it when things are organized according to date and time? &amp;lt;3&lt;/li&gt;
+  &lt;li&gt;About &lt;br /&gt;
+  I’ll let you guys figure this one out.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That’s it! Until next time :D!&lt;/p&gt;</content><author><name>ani-poroorkara</name><email>anirudh_p@outlook.com</email></author><category term="Life" /><summary type="html">Hey Guys! You’ve made it! Again!!</summary></entry></feed>
