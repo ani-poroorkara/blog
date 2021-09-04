@@ -107,8 +107,6 @@ title: Example Blog
 email: anirudh_p@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
   A very nice description!
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: idonthaveone
 github_username:  ani-poroorkara
 ``` 
