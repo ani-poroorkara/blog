@@ -6,7 +6,7 @@ image: /assets/images/enigma.jpg
 seo: {
 metaDescription: First post for my angular scully blog,
 metaTitle: First post
-},
+}
 ---
 
 # Demo Post 1
