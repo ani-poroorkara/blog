@@ -1,0 +1,4 @@
+<p>blog-card works!</p>
+<li *ngFor="let post of links$ | async">
+    <a [href]="post.route">{{post.title}}</a>
+</li>
