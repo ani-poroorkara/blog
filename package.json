@@ -4,11 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && npm run scully -- --scanRoutes",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "scully": "npx scully --",
-    "scully:serve": "npx scully serve --"
+    "scully:serve": "npx scully serve --",
+    "dev-serve":"ng build && npm run scully -- --scanRoutes && npx scully serve"
   },
   "private": true,
   "dependencies": {
