@@ -22,7 +22,7 @@
         <span class="sr-only">Open user menu</span>
         <img
           class="w-8 h-8 rounded-full"
-          src="../assets/images/home/profile.jpeg"
+          src="../assets/images/about/profile.jpeg"
           alt="user photo"
         />
       </button>
@@ -102,10 +102,10 @@
       <ul
         class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium"
       >
-        <button><a class="mr-5 hover:underline focus:outline-none focus:ring"
+        <button><a routerLink="/about" class="mr-5 hover:underline focus:outline-none focus:ring"
           >About</a
         ></button>
-        <button><a class="mr-5 hover:underline focus:outline-none focus:ring"
+        <button><a routerLink="/blog" class="mr-5 hover:underline focus:outline-none focus:ring"
           >Archive</a
         ></button>
       </ul>
@@ -129,7 +129,7 @@
   </nav> -->
 <router-outlet></router-outlet>
 
-<footer class="text-slate-400 bg-zinc-900 body-font">
+<footer class="text-slate-400 bg-zinc-900 body-font ">
   <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
     <a class="flex title-font font-medium items-center md:justify-start justify-center ">
       <span class="ml-3 text-xl">logFile</span>
