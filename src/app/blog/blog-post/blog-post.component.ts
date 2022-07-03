@@ -1,6 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ScullyRoute, ScullyRoutesService} from "@scullyio/ng-lib";
-import {Subject, takeUntil} from "rxjs";
+import {Observable, Subject, takeUntil} from "rxjs";
 import {tap} from "rxjs/operators";
 
 @Component({
@@ -11,6 +11,7 @@ import {tap} from "rxjs/operators";
 export class BlogPostComponent implements OnInit, OnDestroy {
   currentRoute: ScullyRoute = {} as ScullyRoute;
   onDestroy$ = new Subject<void>();
+  currentPost$: Observable<ScullyRoute> = this.scully.getCurrent();
 
   constructor(private scully: ScullyRoutesService) {
   }

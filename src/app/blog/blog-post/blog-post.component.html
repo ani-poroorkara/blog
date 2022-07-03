@@ -1,11 +1,14 @@
-
-<main class="mx-auto max-w-screen-sm max-w-screen-lg">
-    <img [src]="currentRoute['image'] || 'https://cdn.mos.cms.futurecdn.net/4uiRZ5nNAgpHSifSjaKwcC-970-80.jpg.webp'"
-       alt="nft"/>
-    <h3>ScullyIo content</h3>
-    <hr>
-    <!-- This is where Scully will inject the static HTML -->
-    <scully-content></scully-content>
-    <hr>
-    <h4>End of content</h4>
- </main>
+<article class="text-zinc-800 bg-zinc-100 body-font body-font">
+  <div class="container mx-auto flex px-5 py-24 items-center flex-col">
+    <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" [src]="currentRoute['image']">
+    <header class="text-center justify-center lg:w-2/3 w-full">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-zinc-900">{{ currentRoute['title'] }}</h1>
+      <p class="leading-relaxed mb-8">{{ currentRoute['description'] }}</p>
+    </header>
+    <div class="prose">
+      <!-- This is where Scully will inject the static HTML -->
+      <scully-content></scully-content>
+    </div>
+  </div>
+  
+</article>
