@@ -1,28 +1,32 @@
-<div class="p-4">
-  <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
-    <img
-      class="lg:h-48 md:h-36 w-full object-cover object-center"
-      src="https://dummyimage.com/722x402"
-      alt="blog"
-    />
-    <div class="p-6">
-      <h2
-        class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1"
+<div class="grid gap-5 lg:grid-cols-3">
+
+  <article
+    class="p-6 rounded-lg border shadow-md bg-zinc-600 border-zinc-700"
+  >
+    <div class="flex justify-between items-center mb-5 text-slate-400">
+      <span
+        class="bg-primary-100 text-primary-800 text-sm font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800"
       >
-        CATEGORY
-      </h2>
-      <h1 class="title-font text-lg font-medium text-white mb-3">
-        {{ post.title }}
-      </h1>
-      <p class="leading-relaxed mb-3">
-        {{ post["seo"]?.metaDescription || post["description"] }}
-      </p>
-      <div class="flex items-center flex-wrap">
-        <a [routerLink]="post.route" class="text-green-400 inline-flex items-center md:mb-2 lg:mb-0"
-          >Read More!
+        {{ post.category }}
+      </span>
+      <span class="text-sm">Date</span>
+    </div>
+    <h2
+      class="mb-2 text-2xl font-bold tracking-tight text-zinc-100 "
+    >
+      <a href="#">{{ post.title }}</a>
+    </h2>
+    <p class="mb-5 font-light text-zinc-200">
+      {{ post.description }}
+    </p>
+    <div class="flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <a
+        [routerLink]="post.route"
+          class="inline-flex items-center font-medium text-slate-300 hover:underline"
+        >
+          Read more
         </a>
-        
       </div>
     </div>
-  </div>
-</div>
+  </article>
