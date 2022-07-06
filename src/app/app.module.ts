@@ -11,7 +11,7 @@ import { CategoryComponent } from './category/category.component';
   declarations: [
     AppComponent,
     AboutComponent,
-    CategoryComponent
+    CategoryComponent,
   ],
   imports: [
     BrowserModule,

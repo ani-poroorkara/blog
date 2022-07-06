@@ -5,21 +5,45 @@
         Blog Archive
       </h1>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-        Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-        gentrify, subway tile poke farm-to-table. Franzen you probably haven't
-        heard of them man bun deep.
+        All my posts. Ogranized. In a table. 
       </p>
     </div>
-    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-      <div class="grid gap-5 lg:grid-cols-3">
-        <app-blog-card
-      [post]="post"
-      *ngFor="let post of links$ | async"
-    ></app-blog-card>
-      </div>
-      
-                       
-</div>
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg mx-8">
+      <table class="w-full text-sm text-left text-gray-500">
+        <thead class="text-xs text-gray-700 uppercase bg-slate-200 ">
+          <tr>
+              <th scope="col" class="px-6 py-3">
+                  Name
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Category
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Date
+              </th>
+              <th scope="col" class="px-6 py-3">
+                Link
+            </th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let post of links$ | async" class="bg-white border-b hover:bg-gray-50">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+              {{ post.title }}
+          </th>
+          <td class="px-6 py-4">
+            {{ post.category }}
+          </td>
+          <td class="px-6 py-4">
+            {{ post.date }}
+          </td>
+          <td class="px-6 py-4">
+            <a href="{{ post.route }}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Read now!</a>
+        </td>
+      </tr>
+      </tbody>
+      </table>
+    </div>
   </div>
   
 </section>

@@ -1,23 +1,27 @@
 import { Component, OnInit } from '@angular/core';
-import {ScullyRoute, ScullyRoutesService} from "@scullyio/ng-lib";
-import {Observable, map, tap} from "rxjs";
+import { ScullyRoute, ScullyRoutesService } from '@scullyio/ng-lib';
+import { Observable, map, tap } from 'rxjs';
 
 @Component({
   selector: 'app-blog-list',
   templateUrl: './blog-list.component.html',
-  styleUrls: ['./blog-list.component.scss']
+  styleUrls: ['./blog-list.component.scss'],
 })
 export class BlogListComponent implements OnInit {
-  links$: Observable<ScullyRoute[]> = this.scully.available$;
-
-  constructor(private scully: ScullyRoutesService) { }
+  constructor(private scully: ScullyRoutesService) {}
 
   ngOnInit(): void {
-    this.getPublishedPosts();
+    console.log('category');
+    this.scully.available$.subscribe((routes) => console.log(routes));
   }
 
-  getPublishedPosts() {
-    this.links$ = this.links$.pipe(map((links: any[]) => links.filter((link: { route: string; }) =>
-      link.route.startsWith('/blog/'))),tap((val: any) => console.log(val)));
-  }
+  links$ = this.scully.available$.pipe(
+    map((routes: ScullyRoute[]) =>  
+      routes.filter(
+        (route: ScullyRoute) =>
+        route.route.startsWith('/blog/') && route.sourceFile?.endsWith('.md')
+      )
+    ),
+    map((blogs) => blogs.sort((a, b) => (a.date < b.date ? 1 : -1)))
+  );
 }
