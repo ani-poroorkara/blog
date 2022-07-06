@@ -2,7 +2,7 @@
 title: Post 1
 description: blog description
 published: true
-category: Life
+category: life
 date: '2022-08-11'
 image: https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d29ya3xlbnwwfDB8MHx8&auto=format&fit=crop&w=600&q=60
 seo: {

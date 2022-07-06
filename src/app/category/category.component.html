@@ -1,0 +1,12 @@
+<p>hello</p>
+
+<ul>
+    <li *ngFor="let blog of scullyPosts$ | async">
+      <a [routerLink]="blog.route">
+        <div>
+          <h2>{{blog.title}}</h2>
+          <p>{{blog.date | date: 'mediumDate'}}</p>
+        </div>
+      </a>
+    </li>
+  </ul>
