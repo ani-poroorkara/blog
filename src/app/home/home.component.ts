@@ -25,4 +25,5 @@ export class HomeComponent implements OnInit {
     ),
     map((blogs) => blogs.sort((a, b) => (a.date < b.date ? 1 : -1)))
   );
+
 }
