@@ -1,29 +1,27 @@
-<div class="grid gap-5 lg:grid-cols-3">
-
   <article
-    class="p-6 rounded-lg border shadow-md bg-zinc-600 border-zinc-700"
+    class="p-6 rounded-lg border shadow-md bg-slate-300 border-zinc-700"
   >
-    <div class="flex justify-between items-center mb-5 text-slate-400">
+    <div class="flex justify-between items-center mb-5 text-slate-700">
       <span
-        class="bg-primary-100 text-primary-800 text-sm font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800"
+        class="text-sm font-medium inline-flex items-center px-2.5 py-0.5 rounded"
       >
         {{ post.category }}
       </span>
       <span class="text-sm">Date</span>
     </div>
     <h2
-      class="mb-2 text-2xl font-bold tracking-tight text-zinc-100 "
+      class="mb-2 text-2xl font-bold tracking-tight text-slate-900 "
     >
       <a href="#">{{ post.title }}</a>
     </h2>
-    <p class="mb-5 font-light text-zinc-200">
+    <p class="mb-5 font-light text-slate-800">
       {{ post.description }}
     </p>
     <div class="flex justify-between items-center">
       <div class="flex items-center space-x-4">
         <a
         [routerLink]="post.route"
-          class="inline-flex items-center font-medium text-slate-300 hover:underline"
+          class="inline-flex items-center font-medium text-slate-700 hover:underline"
         >
           Read more
         </a>

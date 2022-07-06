@@ -11,10 +11,13 @@
       </p>
     </div>
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-      <app-blog-card
+      <div class="grid gap-5 lg:grid-cols-3">
+        <app-blog-card
       [post]="post"
       *ngFor="let post of links$ | async"
     ></app-blog-card>
+      </div>
+      
                        
 </div>
   </div>
