@@ -10,7 +10,7 @@
     "scully": "npx scully --",
     "scully:serve": "npx scully serve --",
     "dev-serve": "ng build && npm run scully -- --scanRoutes && npx scully serve",
-    "build:prod": "ng build --prod && scully --prod --scanRoutes"
+    "build:prod": "ng build --prod && npm run scully"
   },
   "private": true,
   "dependencies": {
