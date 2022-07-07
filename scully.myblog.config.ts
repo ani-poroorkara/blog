@@ -1,7 +1,10 @@
-import { ScullyConfig } from '@scullyio/scully';
+import { ScullyConfig, setPluginConfig } from '@scullyio/scully';
 
 /** this loads the default render plugin, remove when switching to something else. */
 import '@scullyio/scully-plugin-puppeteer'
+/** this line goes into your scully.<app>.config.ts */
+import 'prismjs/components/prism-java.js';
+
 
 export const config: ScullyConfig = {
   projectRoot: "./src",
@@ -17,3 +20,5 @@ export const config: ScullyConfig = {
     },
   }
 };
+
+setPluginConfig('md', { enableSyntaxHighlighting: true });
