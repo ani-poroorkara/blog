@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
 
 /* include CSS for prism toolbar */  
 @import '~prismjs/plugins/toolbar/prism-toolbar.css';  
@@ -10,5 +12,6 @@
 @import '~prismjs/themes/prism-tomorrow';  
 
 html, body {
-    font-family: 'Space Mono', monospace;
+    // font-family: 'Space Mono', monospace;
+    font-family: 'Noto Serif', serif;
 }
