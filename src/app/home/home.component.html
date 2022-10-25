@@ -18,19 +18,18 @@
       <div class="flex justify-center">
         <a href="#featured">
           <button
-          class="inline-flex text-white bg-zinc-800 border-0 py-2 px-6 focus:outline-none hover:bg-zinc-900 rounded text-lg"
-        >
-          Featured
-        </button>
+            class="inline-flex text-white bg-zinc-800 border-0 py-2 px-6 focus:outline-none hover:bg-zinc-900 rounded text-lg"
+          >
+            Featured
+          </button>
         </a>
         <a routerLink="/blog">
           <button
-          class="ml-4 inline-flex text-slate-50 bg-slate-800 border-0 py-2 px-6 focus:outline-none hover:bg-slate-900 hover:text-white rounded text-lg"
-        >
-          Explore
-        </button>
+            class="ml-4 inline-flex text-slate-50 bg-slate-800 border-0 py-2 px-6 focus:outline-none hover:bg-slate-900 hover:text-white rounded text-lg"
+          >
+            Explore
+          </button>
         </a>
-        
       </div>
     </div>
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -44,7 +43,10 @@
 </section>
 
 <!-- Featured -->
-<section id="featured" class="text-slate-50 bg-zinc-800 body-font transition ease-in-out delay-150">
+<section
+  id="featured"
+  class="text-slate-50 bg-zinc-800 body-font transition ease-in-out delay-150"
+>
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col">
       <div class="h-1 bg-zinc-500 rounded overflow-hidden">
@@ -56,11 +58,13 @@
         >
           Latest Articles.
         </h1>
-        
       </div>
     </div>
     <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-      <div *ngFor="let blog of $blogPosts | async | slice:0:3" class="p-4 md:w-1/3 sm:mb-0 mb-6">
+      <div
+        *ngFor="let blog of $blogPosts | async | slice: 0:3"
+        class="p-4 md:w-1/3 sm:mb-0 mb-6"
+      >
         <div class="rounded-lg h-64 overflow-hidden">
           <img
             alt="content"
@@ -74,11 +78,12 @@
         <p class="text-base leading-relaxed mt-2">
           {{ blog.description }}
         </p>
-        <a [routerLink]="blog.route" class="text-orange-400 inline-flex items-center mt-3 hover:underline focus:outline-none focus:ring"
+        <a
+          [routerLink]="blog.route"
+          class="text-orange-400 inline-flex items-center mt-3 hover:underline focus:outline-none focus:ring"
           >Read More
         </a>
       </div>
-      
     </div>
   </div>
 </section>
