@@ -1,6 +1,12 @@
 /**
  * Site header
  */
+ $site-title-color: #F5F7DC;
+ $border-color-01: #F5F7DC;
+ $text-color: #F5F7DC;
+ $background-color: #37465B;
+ $link-color: #F4D06F;
+
 .site-header {
   border-top: 5px solid $border-color-03;
   border-bottom: 1px solid $border-color-01;
@@ -33,7 +39,6 @@
   top: 9px;
   right: $spacing-unit / 2;
   background-color: $background-color;
-  border: 1px solid $border-color-01;
   border-radius: 5px;
   text-align: right;
 
@@ -89,7 +94,7 @@
   @media screen and (min-width: $on-medium) {
     position: static;
     float: right;
-    border: none;
+    
     background-color: inherit;
 
     label[for="nav-trigger"] {
@@ -124,6 +129,10 @@
 .site-footer {
   border-top: 1px solid $border-color-01;
   padding: $spacing-unit 0;
+  color: #6D7973;
+}
+.web-link{
+  color: $link-color;
 }
 
 .footer-heading {
@@ -144,7 +153,6 @@
 .footer-col-wrapper,
 .social-links {
   @include relative-font-size(0.9375);
-  color: $brand-color;
 }
 
 .footer-col {
@@ -224,7 +232,7 @@
 
 .post-meta {
   font-size: $small-font-size;
-  color: $brand-color;
+  color: $border-color-01;
 }
 
 .post-link {

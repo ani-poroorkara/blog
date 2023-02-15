@@ -7,36 +7,48 @@
   "minima/initialize";
 // import Font
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Spectral&display=swap');
+$display-font:'Spectral', serif;
+$text-font: 'Poiret One', cursive;
+
+// Colors
+$bg-color: #212B38;
+$link-color: #F4D06F;
+$text-color: #F2F4F3;
+
+// Overwritten colors
+$site-title-color: #F5F7DC;
 
 // body
 body{
-  font-family: 'Spectral', serif;
+  font-family: $display-font;
+  background-color: $bg-color;
+  color: $text-color;
   a{
-    color: #63CCCA
+    color: $link-color;
   }
 }
 
 // h1
 h1{
-  font-family: 'Poiret One', cursive;
+  font-family: $text-font;
 }
 // h3
 .page-content{
   a{
-    color: #63CCCA
+    color: $link-color
   }
 }
 .feed-subscribe{
-    color: #63CCCA
+    color: $link-color
 }
 // Post Layout
 .post-categories {
   a{
-    background-color: #63CCCA;
+    background-color: $link-color;
     color: #181818;
     border-radius: 5px;
     padding: 2px;
-    border-color: #63CCCA;
+    border-color: $link-color;
   }:hover{
     text-decoration: underline;
   }
@@ -45,4 +57,7 @@ h1{
   span.reading-time{
     font-style: italic;  
   }
+}
+a.u-email{
+  color: $link-color;
 }
